@@ -164,7 +164,7 @@ int main()
     }
     if (enemy.GetName() != "Нет")
     {
-        cout << "1 - Ударить в ответ\n 2 - Схавать яблочко(+10hp)\n" << endl;
+        cout << "1 - Ударить в ответ\n 2 - Скушать яблочко(+10hp)\n" << endl;
   
         choisee = TestChoise(2, "Вышел за рамки");
         switch (choisee)
@@ -175,7 +175,7 @@ int main()
             cout << "Вы нанесли" << enemy.GetName() << player->GetCharacter()->GetDamage() << "урона" << endl;
             break;
         case 2:
-            cout << "Вы схавали яблочко" << endl;
+            cout << "Вы скушали яблочко" << endl;
             player->GetCharacter()->Health(10);
             cout << player->GetCharacter()->GetHealth();
             break;
